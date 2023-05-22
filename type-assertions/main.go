@@ -5,7 +5,6 @@ import (
 )
 
 func getExpenseReport(e expense) (string, float64) {
-	// ?
 	em, ok := e.(email)
 
 	if ok {
@@ -18,8 +17,6 @@ func getExpenseReport(e expense) (string, float64) {
 	}
 	return "", 0.0
 }
-
-// don't touch below this line
 
 func (e email) cost() float64 {
 	if !e.isSubscribed {

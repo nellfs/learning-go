@@ -15,8 +15,6 @@ func (e email) print() {
 	fmt.Println(e.body)
 }
 
-// don't touch below this line
-
 type expense interface {
 	cost() float64
 }
